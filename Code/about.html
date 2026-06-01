@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Atlas Atelier</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: "#b77a3f",
+            },
+            borderRadius: {
+              xl2: "2rem",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-slate-50 text-slate-950">
+    <header
+      class="sticky top-0 z-30 bg-white/95 backdrop-blur border-b border-slate-200"
+    >
+      <div
+        class="mx-auto flex max-w-6xl items-center justify-between px-6 py-5"
+      >
+        <a
+          class="text-lg font-semibold uppercase tracking-[0.35em] text-slate-950"
+          href="Main.html"
+          >Atlas Atelier</a
+        >
+        <button
+          class="nav-toggle inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-4 py-2 text-sm text-slate-700 shadow-sm md:hidden"
+          aria-label="Open navigation menu"
+        >
+          Menu
+        </button>
+        <nav
+          class="site-nav hidden items-center gap-8 text-sm font-medium text-slate-600 md:flex"
+        >
+          <a href="Main.html">Home</a>
+          <a href="products.html">Collection</a>
+          <a class="text-slate-950" href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="mx-auto max-w-6xl px-6 py-24">
+      <section
+        class="rounded-[2rem] border border-slate-200 bg-white p-10 shadow-sm"
+      >
+        <p
+          class="mb-4 text-sm font-semibold uppercase tracking-[0.35em] text-brand"
+        >
+          Brand Story
+        </p>
+        <h1 class="text-4xl font-semibold leading-tight text-slate-950">
+          Creating wardrobe essentials that feel made for every milestone.
+        </h1>
+        <p class="mt-6 max-w-3xl text-slate-600">
+          Atlas Atelier blends modern tailoring, luxury fabrics, and considered
+          finishing to make each collection feel purposeful, refined, and
+          timeless.
+        </p>
+      </section>
+
+      <section class="mt-10 grid gap-6 md:grid-cols-3">
+        <article
+          class="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm"
+        >
+          <h2 class="text-2xl font-semibold text-slate-950">Our Approach</h2>
+          <p class="mt-4 text-slate-600">
+            Every piece is designed with clean lines, elevated materials, and
+            attention to wearable comfort. Our silhouettes are meant to
+            transition from day to evening with ease.
+          </p>
+        </article>
+        <article
+          class="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm"
+        >
+          <h2 class="text-2xl font-semibold text-slate-950">Design DNA</h2>
+          <p class="mt-4 text-slate-600">
+            Structured outerwear, seamless eveningwear, and polished essentials
+            are the pillars of our label. We layer subtle detailing for a
+            premium finish without compromising versatility.
+          </p>
+        </article>
+        <article
+          class="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm"
+        >
+          <h2 class="text-2xl font-semibold text-slate-950">Commitment</h2>
+          <p class="mt-4 text-slate-600">
+            We prioritize durable fabrics and responsible craftsmanship to offer
+            pieces that stay relevant season after season. Every collection is
+            built to feel more intentional than fleeting.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <footer
+      class="border-t border-slate-200 bg-white/95 py-8 text-center text-sm text-slate-500"
+    >
+      <p>Atlas Atelier — Designed for the life you wear.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
