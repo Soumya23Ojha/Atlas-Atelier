@@ -4,28 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Atlas Atelier</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
         theme: {
           extend: {
             colors: {
-              brand: "#b77a3f",
+  brand: '#C2A878',
+  charcoal: '#0B0B0B',
+  espresso: '#1A1715',
+  ivory: '#F6F3EE',
+  stone: '#D5CEC3',
+},
+            fontFamily: {
+              serif: ['Cormorant Garamond', 'serif'],
+              sans: ['Inter', 'system-ui', 'sans-serif'],
             },
-            borderRadius: {
-              xl2: "2rem",
+            boxShadow: {
+              soft: '0 24px 80px rgba(0, 0, 0, 0.25)',
             },
           },
         },
       };
     </script>
+    <style>
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
   </head>
-  <body
-    class="bg-gradient-to-br from-rose-50 via-white to-sky-50 text-slate-950"
-  >
-    <header
-      class="sticky top-0 z-30 bg-white/80 backdrop-blur border-b border-slate-200"
-    >
+
+
+<body class="bg-black text-ivory font-sans antialiased overflow-x-hidden">
+      <header
+       class="fixed top-0 left-0 w-full z-50 bg-black/30 backdrop-blur-xl border-b border-white/10">
       <div
         class="mx-auto flex max-w-6xl items-center justify-between px-6 py-5"
       >
@@ -51,39 +65,34 @@
       </div>
     </header>
 
+    <!---------------- Hero Section ------------------------->
     <main>
-      <section class="mx-auto max-w-6xl px-6 py-24">
-        <div
-          class="rounded-[2.5rem] border border-slate-200 bg-gradient-to-br from-fuchsia-100 via-white to-cyan-100 p-12 shadow-[0_35px_60px_-25px_rgba(15,23,42,0.2)]"
-        >
-          <div class="max-w-3xl space-y-8">
-            <p
-              class="text-sm font-semibold uppercase tracking-[0.35em] text-fuchsia-600"
-            >
-              Seasonal edit
-            </p>
-            <h1 class="text-5xl font-semibold leading-tight text-slate-950">
-              A fashion destination for modern tailored style.
-            </h1>
-            <p class="max-w-2xl text-base leading-8 text-slate-600">
-              Atlas Atelier creates premium everyday essentials, statement
-              outerwear, and refined eveningwear for confident dressing.
-            </p>
-            <div class="flex flex-col gap-4 sm:flex-row">
-              <a
-                class="inline-flex items-center justify-center rounded-full bg-fuchsia-600 px-8 py-3 text-sm font-semibold text-white shadow-lg shadow-fuchsia-200 transition hover:-translate-y-0.5"
-                href="products.html"
-                >Shop the collection</a
-              >
-              <a
-                class="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-8 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-50"
-                href="about.html"
-                >Our story</a
-              >
-            </div>
-          </div>
-        </div>
-      </section>
+      <section class="relative h-screen overflow-hidden">
+
+<img
+src="https://tse3.mm.bing.net/th/id/OIP.cEWrlr22NiaqFJ4wIGG45wHaEJ?pid=ImgDet&w=184&h=103&c=7&dpr=1.3&o=7&rm=3" class="absolute inset-0 h-full w-full object-cover"/>
+<div class="absolute inset-0 bg-black/55"></div>
+<div class="relative z-10 flex h-full items-center px-16">
+<div class="max-w-3xl">
+<p class="uppercase tracking-[0.5em] text-brand text-sm mb-6">
+Atlas Atelier</p>
+
+<h1 class="font-serif text-7xl leading-none text-white">
+Crafted For The Modern Gentleman
+</h1>
+
+<p class="mt-8 text-lg text-stone max-w-xl">
+Luxury tailoring, refined silhouettes, and timeless menswear designed for those who appreciate quiet excellence.
+</p>
+
+<a
+href="products.html"
+class="inline-block mt-10 border border-brand px-10 py-4 uppercase tracking-[0.3em] text-brand hover:bg-brand hover:text-black transition-all duration-500">
+Explore Collection
+</a>
+</div>
+</div>
+</section>
 
       <section class="mx-auto max-w-10xl space-y-8 px-6 pb-24">
         <div class="grid gap-6 md:grid-cols-3">
@@ -139,9 +148,10 @@
             <article
               class="overflow-hidden rounded-[2rem] border border-rose-100 bg-gradient-to-br from-rose-50 via-white to-fuchsia-100 shadow-lg"
             >
-              <div
-                class="h-56 bg-[radial-gradient(circle_at_top_left,_rgba(236,72,153,0.18),_transparent_45%),linear-gradient(135deg,_rgba(244,114,182,0.15),_rgba(251,207,232,0.3))]"
-              ></div>
+              <img
+src="images/model1.jpg"
+class="h-[700px] w-full object-cover"
+/>
               <div class="p-6">
                 <span
                   class="text-xs font-semibold uppercase tracking-[0.35em] text-brand"
