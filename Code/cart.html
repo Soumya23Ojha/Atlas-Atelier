@@ -21,14 +21,43 @@
         .heading{
             font-family:'Cormorant Garamond', serif;
         }
+
+            .no-scrollbar::-webkit-scrollbar { display: none; }
+            .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
     </style>
 </head>
 
-<body class="text-white">
+<body class="bg-black text-ivory font-sans antialiased overflow-x-hidden">
+      <header
+       class="fixed top-0 left-0 w-full z-50 bg-black/30 backdrop-blur-xl border-b border-white/10">
+      <div
+        class="mx-auto flex max-w-6xl items-center justify-between px-6 py-5"
+      >
+        <a
+          class="text-lg font-semibold uppercase tracking-[0.35em] text-[#F6F3EE]"
+          href="Main.html"
+          >Atlas Atelier</a>
+        <button
+          class="nav-toggle inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-4 py-2 text-sm text-slate-700 shadow-sm md:hidden"
+          aria-label="Open navigation menu"
+        >
+          Menu
+        </button>
+        <nav
+          class="site-nav hidden items-center gap-8 text-sm font-medium text-slate-600 md:flex"
+        >
+          <a href="Main.html">Home</a>
+          <a href="collections.html">Collection</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
 
 <section class="max-w-7xl mx-auto px-6 py-20">
 
-    <h1 class="heading text-6xl text-center mb-16">
+    <h1 class="heading text-6xl text-center mb-16 text-white">
         Shopping Cart
     </h1>
 
@@ -38,22 +67,20 @@
 
         <div class="lg:col-span-2 space-y-6">
 
-            {% for item in cart_items %}
-
             <div class="bg-[#0B0B0B] border border-white/10 p-6">
 
                 <div class="flex flex-col md:flex-row gap-6">
 
                     <img
-                        src="{{ item.product.image.url }}"
+                        src="https://images.unsplash.com/photo-1623880840102-7df0a9f3545b?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         class="w-40 h-52 object-cover"
                         alt=""
                     >
 
                     <div class="flex-1">
 
-                        <h2 class="heading text-3xl">
-                            {{ item.product.name }}
+                        <h2 class="heading text-3xl text-white">
+                            Luxury Noir
                         </h2>
 
                         <p class="text-gray-400 mt-2">
@@ -94,7 +121,7 @@
 
             <div class="bg-[#0B0B0B] border border-white/10 p-8 sticky top-10">
 
-                <h2 class="heading text-4xl mb-8">
+                <h2 class="heading text-4xl mb-8 text-white">
                     Order Summary
                 </h2>
 
@@ -132,4 +159,3 @@
 
 </body>
 </html>
-```
