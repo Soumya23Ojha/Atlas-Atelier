@@ -1,39 +1,83 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About | Atlas Atelier</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About Us</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+<script>
       tailwind.config = {
         theme: {
           extend: {
             colors: {
-              brand: "#b77a3f",
+  brand: '#C2A878',
+  charcoal: '#0B0B0B',
+  espresso: '#1A1715',
+  ivory: '#F6F3EE',
+  stone: '#D5CEC3',
+},
+            fontFamily: {
+              serif: ['Cormorant Garamond', 'serif'],
+              sans: ['Inter', 'system-ui', 'sans-serif'],
             },
-            borderRadius: {
-              xl2: "2rem",
+            boxShadow: {
+              soft: '0 24px 80px rgba(0, 0, 0, 0.25)',
             },
           },
         },
       };
     </script>
-  </head>
-  <body
-    class="bg-gradient-to-br from-amber-50 via-white to-violet-50 text-slate-950"
-  >
-    <header
-      class="sticky top-0 z-30 bg-white/85 backdrop-blur border-b border-slate-200"
-    >
+
+<style>
+body{
+    font-family:'Roboto',sans-serif;
+    background:#050505;
+    color:#F8F6F3;
+}
+
+.heading{
+    font-family:'Cormorant Garamond',serif;
+}
+
+.gold{
+    color:#C8A45D;
+}
+
+.gold-bg{
+    background:#C8A45D;
+}
+
+.section-divider{
+    width:120px;
+    height:1px;
+    background:#C8A45D;
+}
+
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+</style>
+
+</head>
+
+  <body class="bg-black text-ivory font-sans antialiased overflow-x-hidden">
+      <header
+       class="fixed top-0 left-0 w-full z-50 bg-black/30 backdrop-blur-xl border-b border-white/10">
       <div
         class="mx-auto flex max-w-6xl items-center justify-between px-6 py-5"
       >
         <a
-          class="text-lg font-semibold uppercase tracking-[0.35em] text-slate-950"
+          class="text-lg font-semibold uppercase tracking-[0.35em] text-[#F6F3EE]"
           href="Main.html"
-          >Atlas Atelier</a
-        >
+          >Atlas Atelier</a>
         <button
           class="nav-toggle inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-4 py-2 text-sm text-slate-700 shadow-sm md:hidden"
           aria-label="Open navigation menu"
@@ -44,71 +88,437 @@
           class="site-nav hidden items-center gap-8 text-sm font-medium text-slate-600 md:flex"
         >
           <a href="Main.html">Home</a>
-          <a href="products.html">Collection</a>
-          <a class="text-slate-950" href="about.html">About</a>
+          <a href="collections.html">Collection</a>
+          <a class="text-[#F6F3EE]" href="about.html">About</a>
           <a href="contact.html">Contact</a>
         </nav>
       </div>
     </header>
 
-    <main class="mx-auto max-w-6xl px-6 py-24">
-      <section
-        class="rounded-[2rem] border border-slate-200 bg-gradient-to-br from-amber-50 via-white to-violet-50 p-10 shadow-sm"
-      >
-        <p
-          class="mb-4 text-sm font-semibold uppercase tracking-[0.35em] text-brand"
-        >
-          Brand Story
-        </p>
-        <h1 class="text-4xl font-semibold leading-tight text-slate-950">
-          Creating wardrobe essentials that feel made for every milestone.
-        </h1>
-        <p class="mt-6 max-w-3xl text-slate-600">
-          Atlas Atelier blends modern tailoring, luxury fabrics, and considered
-          finishing to make each collection feel purposeful, refined, and
-          timeless.
-        </p>
-      </section>
+<!-- HERO SECTION -->
 
-      <section class="mt-10 grid gap-6 md:grid-cols-3">
-        <article
-          class="rounded-[2rem] border border-rose-200 bg-gradient-to-br from-rose-50 via-white to-fuchsia-100 p-8 shadow-lg shadow-rose-100/40"
-        >
-          <h2 class="text-2xl font-semibold text-slate-950">Our Approach</h2>
-          <p class="mt-4 text-slate-600">
-            Every piece is designed with clean lines, elevated materials, and
-            attention to wearable comfort. Our silhouettes transition from day
-            to evening with ease.
-          </p>
-        </article>
-        <article
-          class="rounded-[2rem] border border-cyan-200 bg-gradient-to-br from-cyan-50 via-white to-sky-100 p-8 shadow-lg shadow-cyan-100/40"
-        >
-          <h2 class="text-2xl font-semibold text-slate-950">Design DNA</h2>
-          <p class="mt-4 text-slate-600">
-            Structured outerwear, seamless eveningwear, and polished essentials
-            are the pillars of our label. We layer subtle detailing for premium
-            polish and wearable ease.
-          </p>
-        </article>
-        <article
-          class="rounded-[2rem] border border-amber-200 bg-gradient-to-br from-amber-50 via-white to-orange-100 p-8 shadow-lg shadow-amber-100/40"
-        >
-          <h2 class="text-2xl font-semibold text-slate-950">Commitment</h2>
-          <p class="mt-4 text-slate-600">
-            We prioritize durable fabrics and thoughtful craftsmanship to offer
-            pieces that remain relevant season after season.
-          </p>
-        </article>
-      </section>
-    </main>
+<section class="relative h-screen overflow-hidden">
 
-    <footer
-      class="border-t border-slate-200 bg-white/95 py-8 text-center text-sm text-slate-500"
+    <img
+        src="https://images.unsplash.com/photo-1765175094470-ed3bef04ed40?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTR8fGZvcm1hbCUyMG1hbnxlbnwwfHwwfHx8MA%3D%3D"
+        alt=""
+        class="absolute inset-0 h-full w-full object-cover"
     >
-      <p>Atlas Atelier — Designed for the life you wear.</p>
-    </footer>
 
-    <script src="script.js"></script>
-  </body>
+    <div class="absolute inset-0 bg-black/75"></div>
+
+    <div class="relative z-10 flex h-full items-center justify-center px-6">
+
+        <div class="max-w-4xl text-center">
+
+            <span class="gold uppercase tracking-[0.5em] text-sm">
+                Atlas Atelier
+            </span>
+
+            <h1 class="heading mt-6 text-6xl md:text-8xl font-semibold">
+                Crafting Modern Elegance
+            </h1>
+
+            <p class="mt-8 text-lg text-gray-300 leading-relaxed max-w-2xl mx-auto">
+                Atlas Atelier was founded on a simple belief—
+                true luxury is found in the details.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- STORY SECTION -->
+
+<section class="py-28">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+            <div>
+                <img
+                    src="https://images.unsplash.com/photo-1617127365659-c47fa864d8bc"
+                    class="w-full h-[650px] object-cover"
+                    alt=""
+                >
+            </div>
+
+            <div>
+
+                <span class="gold uppercase tracking-[0.4em] text-sm">
+                    Our Story
+                </span>
+
+                <h2 class="heading text-5xl mt-5">
+                    Beyond Fashion
+                </h2>
+
+                <div class="section-divider mt-8"></div>
+
+                <p class="mt-8 text-gray-400 leading-8">
+                    Atlas Atelier was born from a passion for timeless menswear,
+                    exceptional craftsmanship, and understated luxury.
+                    We believe clothing is more than fabric and tailoring —
+                    it is an expression of confidence, individuality,
+                    and personal excellence.
+                </p>
+
+                <p class="mt-6 text-gray-400 leading-8">
+                    Every collection is thoughtfully designed to combine
+                    contemporary sophistication with timeless elegance.
+                    Our garments are crafted for men who appreciate quality,
+                    value refinement, and understand that true luxury
+                    never seeks attention — it naturally commands it.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- QUOTE SECTION -->
+
+<section class="py-32 border-y border-white/10">
+
+    <div class="max-w-5xl mx-auto px-6 text-center">
+
+        <h2 class="heading text-5xl md:text-7xl leading-tight">
+            Luxury Is Not Excess.
+            <span class="gold block">
+                Luxury Is Intention.
+            </span>
+        </h2>
+
+        <p class="mt-10 text-gray-400 max-w-3xl mx-auto leading-8">
+            Every stitch, every fabric, and every silhouette is carefully
+            considered to create garments that embody sophistication,
+            precision, and distinction.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- BRAND PILLARS -->
+
+<section class="py-28">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="text-center">
+
+            <span class="gold uppercase tracking-[0.4em] text-sm">
+                Our Foundation
+            </span>
+
+            <h2 class="heading text-5xl mt-5">
+                The Atlas Principles
+            </h2>
+
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-20">
+
+          <!-- CARD 1 -->
+            <div class="group border border-white/10 bg-[#111111] p-10 transition-all duration-500 hover:border-[#C2A878] hover:-translate-y-1"
+">
+
+                <h3 class="heading text-3xl">
+                    Craftsmanship
+                </h3>
+
+                <p class="mt-5 text-gray-400 leading-7">
+                    Precision tailoring and meticulous attention to detail define every garment.
+                </p>
+
+            </div>
+
+            <!-- CARD 2 -->
+            <div     class="group border border-white/10 bg-[#111111] p-10 transition-all duration-500 hover:border-[#C2A878] hover:-translate-y-1"
+>
+
+                <h3 class="heading text-3xl">
+                    Materials
+                </h3>
+
+                <p class="mt-5 text-gray-400 leading-7">
+                    Premium fabrics selected for superior comfort, durability, and elegance.
+                </p>
+
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="group border border-white/10 bg-[#111111] p-10 transition-all duration-500 hover:border-[#C2A878] hover:-translate-y-1"
+>
+
+                <h3 class="heading text-3xl">
+                    Timelessness
+                </h3>
+
+                <p class="mt-5 text-gray-400 leading-7">
+                    Designs created to remain relevant long after trends fade.
+                </p>
+
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="group border border-white/10 bg-[#111111] p-10 transition-all duration-500 hover:border-[#C2A878] hover:-translate-y-1"
+>
+
+                <h3 class="heading text-3xl">
+                    Sophistication
+                </h3>
+
+                <p class="mt-5 text-gray-400 leading-7">
+                    Modern luxury designed for gentlemen of distinction.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PHILOSOPHY -->
+
+<section class="bg-[#0B0B0B] py-32">
+
+    <div class="max-w-4xl mx-auto px-6 text-center">
+
+        <span class="gold uppercase tracking-[0.4em] text-sm">
+            The Atlas Standard
+        </span>
+
+        <h2 class="heading text-6xl mt-6">
+            Our Philosophy
+        </h2>
+
+        <p class="mt-10 text-gray-400 leading-8">
+            We reject fast fashion and temporary trends.
+            Instead, we create pieces designed to become a lasting part
+            of a gentleman's wardrobe. Every garment reflects our commitment
+            to authenticity, craftsmanship, and timeless style.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- CRAFTSMANSHIP -->
+
+<section class="py-28">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+            <div>
+
+                <span class="gold uppercase tracking-[0.4em] text-sm">
+                    Precision
+                </span>
+
+                <h2 class="heading text-5xl mt-5">
+                    Crafted In Every Detail
+                </h2>
+
+                <div class="section-divider mt-8"></div>
+
+                <p class="mt-8 text-gray-400 leading-8">
+                    From the first sketch to the final finishing touch,
+                    every Atlas Atelier garment undergoes a meticulous
+                    creation process.
+                </p>
+
+                <p class="mt-6 text-gray-400 leading-8">
+                    Excellence is never accidental.
+                    It is the result of patience, expertise,
+                    and uncompromising standards.
+                </p>
+
+            </div>
+
+            <div>
+
+                <img
+                    src="https://images.unsplash.com/photo-1752609838338-b28f3b77419a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fG1hbiUyMGNsb3NldXB8ZW58MHx8MHx8fDA%3D"
+                    class="w-full h-[650px] object-cover"
+                    alt=""
+                >
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- STATS -->
+
+<section class="py-24 border-y border-white/10">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 text-center">
+
+            <div>
+                <h3 class="heading text-6xl gold">10K+</h3>
+                <p class="mt-4 text-gray-400 uppercase tracking-widest text-sm">
+                    Garments Crafted
+                </p>
+            </div>
+
+            <div>
+                <h3 class="heading text-6xl gold">100%</h3>
+                <p class="mt-4 text-gray-400 uppercase tracking-widest text-sm">
+                    Premium Materials
+                </p>
+            </div>
+
+            <div>
+                <h3 class="heading text-6xl gold">50+</h3>
+                <p class="mt-4 text-gray-400 uppercase tracking-widest text-sm">
+                    Design Iterations
+                </p>
+            </div>
+
+            <div>
+                <h3 class="heading text-6xl gold">∞</h3>
+                <p class="mt-4 text-gray-400 uppercase tracking-widest text-sm">
+                    Commitment To Excellence
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FOUNDER VISION -->
+
+<section class="py-32">
+
+    <div class="max-w-4xl mx-auto px-6 text-center">
+
+        <h2 class="heading text-5xl md:text-6xl leading-tight italic">
+            "Atlas Atelier was created to redefine modern menswear through timeless craftsmanship and understated luxury."
+        </h2>
+
+        <p class="gold mt-8 uppercase tracking-[0.3em] text-sm">
+            Founder Vision
+        </p>
+
+    </div>
+
+</section>
+
+<!-- CTA -->
+
+<section class="pb-32">
+
+    <div class="max-w-5xl mx-auto px-6 text-center">
+
+        <span class="gold uppercase tracking-[0.4em] text-sm">
+            Discover More
+        </span>
+
+        <h2 class="heading text-6xl mt-6">
+            Experience Atlas Atelier
+        </h2>
+
+        <p class="mt-8 text-gray-400 max-w-2xl mx-auto leading-8">
+            Explore a world where craftsmanship,
+            elegance, and sophistication come together.
+        </p>
+
+        <div class="flex flex-wrap justify-center gap-6 mt-12">
+
+            <a href="collections.html"
+               class="px-10 py-4 bg-[#C8A45D] text-black uppercase tracking-[0.25em] text-sm font-medium hover:opacity-90 transition">
+                Explore Collection
+            </a>
+
+            <a href="contact.html"
+               class="px-10 py-4 border border-[#C8A45D] text-[#C8A45D] uppercase tracking-[0.25em] text-sm">
+                Contact Us
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- footer -->
+ <footer class="mt-24 border-t border-white/10 bg-black">
+  <div class="mx-auto max-w-7xl px-6 py-14">
+    
+    <div class="grid gap-12 md:grid-cols-3">
+      
+      <!-- Brand -->
+      <div>
+        <h3 class="font-serif text-2xl tracking-[0.25em] text-white">
+          ATLAS ATELIER
+        </h3>
+        <p class="mt-4 max-w-sm text-sm leading-relaxed text-gray-400">
+          Luxury menswear crafted for modern gentlemen. Timeless silhouettes,
+          exceptional craftsmanship, and refined elegance in every detail.
+        </p>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <h4 class="mb-4 text-sm uppercase tracking-[0.3em] text-[#C8A45D]">
+          Contact
+        </h4>
+        <ul class="space-y-3 text-sm text-gray-400">
+          <li>contact@atlasatelier.com</li>
+          <li>+91 XXXXX XXXXX</li>
+          <li>India</li>
+        </ul>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h4 class="mb-4 text-sm uppercase tracking-[0.3em] text-[#C8A45D]">
+          Explore
+        </h4>
+        <ul class="space-y-3 text-sm text-gray-400">
+          <li><a href="collections.html" class="transition hover:text-white">Collections</a></li>
+          <li><a href="about.html" class="transition hover:text-white">About Us</a></li>
+          <!-- <li><a href="lookbook.html" class="transition hover:text-white">Lookbook</a></li> -->
+          <li><a href="contact.html" class="transition hover:text-white">Contact</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="mt-12 border-t border-white/10 pt-8">
+      <div class="flex flex-col items-center justify-between gap-4 md:flex-row">
+        
+        <p class="text-sm text-gray-500">
+          © 2026 Atlas Atelier. All Rights Reserved.
+        </p>
+
+        <p class="text-xs uppercase tracking-[0.4em] text-[#C8A45D]">
+          Crafted With Precision
+        </p>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+</body>
 </html>
